@@ -27,7 +27,7 @@ public class CubeController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "CubeTag" || other.gameObject.tag == "GroundTag")
+        if (other.gameObject.name == "CubePrefab(Clone)" || other.gameObject.name == "ground")
         {
             GetComponent<AudioSource>().Play();
         }
